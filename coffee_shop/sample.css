@@ -1,0 +1,613 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF; /* White */
+    color: #000000; /* Black */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: #000000; /* Black */
+    padding: 15px 20px;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+.navbar-nav .nav-link {
+    color: #FFFFFF; /* White */
+    margin-right: 15px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #685901; /* Yellow */
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #FFD700; /* Yellow */
+    border-radius: 5px;
+}
+
+.navbar-toggler {
+    border-color: #FFFFFF; /* White */
+}
+
+.navbar-toggler-icon {
+    color: #FFFFFF; /* White */
+}
+
+/* Banner styling */
+.banner {
+    background-color: #C8102E; /* Dark Red */
+    color: #FFFFFF; /* White */
+    text-align: center;
+    padding: 50px 0;
+}
+
+.banner-content h1,
+.banner-content h2 {
+    margin: 10px 0;
+}
+
+.banner-content p {
+    margin: 20px 0;
+}
+
+.banner-content button {
+    background-color: #FFD700; /* Yellow */
+    color: #C8102E; /* Dark Red */
+    border: 1px solid #C8102E; /* Dark Red */
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background-color: #C8102E; /* Dark Red */
+    color: #FFD700; /* Yellow */
+}
+
+/* Social media icons */
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.social-media-icons .social-icon {
+    color: #000000; /* Black */
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-media-icons .social-icon:hover {
+    color: #C8102E; /* Dark Red */
+}
+
+/* Notification icon */
+.notifications {
+    position: fixed;
+    top: 20px;
+}
+
+.notifications .notification-icon {
+    color: #C8102E; /* Dark Red */
+    font-size: 24px;
+}
+
+.notifications .notification-icon:hover {
+    color: #FFD700; /* Yellow */
+}
+
+/* Category styling */
+.categories {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.categories h2 {
+    margin-bottom: 30px;
+    color: #C8102E; /* Dark Red */
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.category {
+    margin: 10px;
+    text-align: center;
+}
+
+.category img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid #C8102E; /* Dark Red */
+    border-radius: 10px;
+}
+
+.category p {
+    margin-top: 10px;
+    color: #C8102E; /* Dark Red */
+}
+
+.category:hover img {
+    border-color: #FFD700; /* Yellow */
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #C8102E; /* Dark Red */
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.view-more:hover {
+    background-color: #FFD700; /* Yellow */
+    color: #C8102E; /* Dark Red */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #000000; /* Black */
+    color: #FFFFFF; /* White */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #FFFFFF; /* White */
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FFD700; /* Yellow */
+}
+
+/* Form styling */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #C8102E; /* Dark Red */
+}
+
+.form-control:focus {
+    border-color: #C8102E; /* Dark Red */
+    box-shadow: 0 0 5px rgba(200, 16, 46, 0.5); /* Dark Red */
+}
+
+.form-group label {
+    color: #C8102E; /* Dark Red */
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #C8102E; /* Dark Red */
+    border-color: #C8102E; /* Dark Red */
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #FFD700; /* Yellow */
+    border-color: #FFD700; /* Yellow */
+    color: #C8102E; /* Dark Red */
+}
+
+/* Card styling */
+.card {
+    border: 1px solid #C8102E; /* Dark Red */
+    border-radius: 10px;
+}
+
+.card-header,
+.card-footer {
+    background-color: #C8102E; /* Dark Red */
+    color: #FFFFFF; /* White */
+}
+
+.card-title {
+    color: #C8102E; /* Dark Red */
+}
+
+.video-container {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.video-container h2 {
+    margin-bottom: 30px;
+    color: #C8102E; /* Dark Red */
+}
+
+.video {
+    margin: 10px;
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+}
+
+.video iframe,
+.video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* Add some smooth transitions for hover effects */
+.transition {
+    transition: all 0.3s ease;
+}
+
+/* Enhance the look of the Navbar */
+.navbar-nav .nav-link {
+    padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #FFD700; /* Yellow */
+    color: #000000; /* Black */
+}
+
+/* Style for the Banner Title and Text */
+.banner-content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.banner-content h2 {
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+/* Add a shadow effect to the banner button */
+.banner-content button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Make social media icons more interactive */
+.social-media-icons .social-icon {
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-media-icons .social-icon:hover {
+    color: #FFD700; /* Yellow */
+    transform: scale(1.1);
+}
+
+/* Add a stylish border to the notification icon */
+.notifications .notification-icon {
+    border: 2px solid #C8102E; /* Dark Red */
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Add subtle hover effect for categories */
+.category {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhance view-more button with a gradient */
+.view-more {
+    background: linear-gradient(135deg, #C8102E, #FFD700);
+    color: #000000; /* Black */
+}
+
+.view-more:hover {
+    background: linear-gradient(135deg, #FFD700, #C8102E);
+    color: #FFFFFF; /* White */
+}
+
+/* Footer hover effects */
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Card shadow and hover effect */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Add hover effect for buttons */
+.btn-primary {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #FFD700; /* Yellow */
+    color: #000000; /* Black */
+}
+
+/* Video container style */
+.video-container {
+    position: relative;
+}
+
+.video-container h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+    
+/* Responsive adjustments for better mobile experience */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+
+    .banner-content h1 {
+        font-size: 2em;
+    }
+
+    .banner-content h2 {
+        font-size: 1.5em;
+    }
+
+    .category img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .reservation-section .video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Navbar Styling */
+.custom-navbar {
+    background-color: #343a40; /* Dark Background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+}
+
+.custom-navbar .navbar-brand .logo {
+    height: 40px; /* Adjust logo size */
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    padding: 15px 20px; /* Increase padding */
+    color: #ffffff; /* White Text */
+    font-weight: 500; /* Font weight */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    background-color: #FFD700; /* Yellow Background */
+    color: #000000; /* Black Text */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.custom-navbar .navbar-nav .nav-item {
+    margin-left: 10px; /* Space between items */
+}
+
+.custom-navbar .navbar-toggler {
+    border: none;
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;base64,...'); /* Custom icon */
+}
+
+.custom-navbar .navbar-collapse {
+    justify-content: flex-end; /* Align items to the right */
+}
+
+/* Reservation Section Styles */
+.reservation-section {
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0); /* Subtle background gradient */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    animation: fadeInUp 1s ease-out; /* Animation on load */
+}
+
+/* Keyframes for animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.reservation-section h2 {
+    margin-bottom: 30px;
+    color: #C8102E; /* Dark Red */
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem; /* Larger font size */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Text shadow for depth */
+    transition: color 0.3s ease-in-out, transform 0.3s ease; /* Smooth transition */
+    animation: slideInFromLeft 1s ease-out; /* Animation on load */
+}
+
+.reservation-section h2:hover {
+    color: #FF6F61; /* Lighter Red */
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.reservation-section .video {
+    margin: 20px auto; /* Center video and add spacing */
+    display: block;
+    width: 80%; /* Responsive width */
+    max-width: 800px; /* Maximum width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Box shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    animation: fadeInUp 1.5s ease-out; /* Animation on load */
+}
+
+.reservation-section .video:hover {
+    transform: scale(1.03); /* Slightly enlarge on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.reservation-section .btn-reservation {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #C8102E; /* Dark Red */
+    color: #FFFFFF; /* White */
+    text-decoration: none;
+    border-radius: 8px; /* Rounded corners */
+    display: inline-block; /* Ensure button is inline */
+    font-size: 1.1rem; /* Slightly larger font size */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    animation: pulse 2s infinite; /* Continuous pulse effect */
+}
+
+.reservation-section .btn-reservation:hover {
+    background-color: #FF6F61; /* Lighter Red */
+    color: #FFFFFF; /* White */
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.reservation-section .btn-reservation:active {
+    transform: translateY(2px); /* Slight dip on click */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Normal shadow on click */
+}
+
+
+    
+}
+
+
+  /* Keyframes for animations */
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: #ff4d4d; /* Bright Red */
+    }
+    50% {
+        color: #cc0000; /* Dark Red */
+    }
+    100% {
+        color: #ff4d4d; /* Bright Red */
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Combined styles for the h1 element */
+h1 {
+    font-family: 'Arial', sans-serif;
+    color: #ff4d4d; /* Initial bright red color */
+    text-align: center;
+    font-size: 3rem; /* Adjusted font size */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow for depth */
+    margin-top: 50px; /* Space above the heading */
+    animation: 
+        fadeIn 2s ease-out, /* Fade in effect */
+        bounce 2s ease infinite, /* Bounce effect */
+        colorChange 3s ease-in-out infinite, /* Color changing effect */
+        scaleUp 2s ease-out; /* Scale up effect */
+}
+
+/* Additional Styling for Enhancement */
+h1:hover {
+    text-shadow: 3px 3px 12px rgba(255, 0, 0, 0.7); /* Glow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+

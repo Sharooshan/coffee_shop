@@ -1,0 +1,654 @@
+/* General Body Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    color: hsl(0, 0%, 0%);
+    display: flex;
+    background: url('') no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/* Navbar Styling */
+/* navbar.css */
+.navbar {
+   
+    background-color: #ffffff;
+    /* White background color */
+    border-bottom: 1px solid #ddd;
+    /* Light grey border at the bottom */
+    z-index: 1030;
+    /* Ensure it's above other content */
+}
+
+.navbar-brand .logo {
+    height: 60px;
+    /* Adjust as needed */
+}
+
+.navbar-nav .nav-link {
+    color: #000000;
+    /* Black text color */
+    font-weight: bold;
+
+    /* Bold text */
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff0000;
+    /* Highlight color on hover */
+}
+
+.search-form .form-control {
+    border-radius: 0;
+    /* Remove rounded corners */
+}
+
+.search-form .form-control::placeholder {
+    color: #999;
+    /* Placeholder text color */
+}
+
+.navbar-nav .nav-link {
+    margin-right: 20px;
+    /* Space between nav links */
+}
+
+.navbar-nav .nav-link:last-child {
+    margin-right: 0;
+    /* Remove margin for the last nav link */
+}
+
+.navbar .navbar-nav.ms-auto .nav-link {
+    color: #666;
+    /* Grey text color for right-aligned links */
+}
+
+.navbar .navbar-nav.ms-auto .nav-link:hover {
+    color: #ff0000;
+    /* Highlight color on hover */
+}
+
+
+/* unknown  thing's css */
+.container {
+    position: relative;
+    margin-top: 80px;
+    /* Add margin-top to offset the fixed navbar height */
+}
+
+/* Container Styling */
+.container {
+    display: flex;
+    margin-top: 90px;
+    max-width: 1200px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.content-wrapper {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.left-section,
+.right-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 20%;
+    margin: 20px 0;
+}
+
+.main-content {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.photo-card {
+    margin-bottom: 20px;
+}
+
+.photo-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Card Styling */
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #1e212d;
+}
+
+.card-text {
+    color: #495057;
+}
+
+/* Logo Styling */
+.logo {
+    width: 50px;
+    height: 10%;
+    margin-right: 10px;
+}
+
+/* Section Headings */
+h2 {
+    color: #000000;
+    /* Dark heading color */
+    margin-bottom: 20px;
+
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Social Media Icons */
+.social-media-icons {
+    position: fixed;
+    top: 90%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.social-icon {
+    font-size: 40px;
+    color: #271414;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ff0101;
+}
+
+/* Notifications */
+.notifications {
+    position: fixed;
+    top: 15%;
+    left: 20px;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.notification-icon {
+    font-size: 40px;
+    color: #271212;
+    transition: color 0.3s ease;
+}
+
+.notification-icon:hover {
+    color: #ff0404;
+}
+
+/* 1st page banner css */
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffffff, #000000);
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.banner-content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.banner-content p {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+.banner-content button {
+    background-color: #c92424;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background-color: #ffffff;
+}
+
+.banner img {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    width: 30%;
+    z-index: 0;
+}
+
+.new-launch {
+    background-color: white;
+    color: #050205;
+    /* text-decoration:#007bff; */
+    padding: 0.5em 1em;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* chat.css */
+.chat-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #120303;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.chat-button img {
+    width: 40px;
+    height: 40px;
+}
+
+.chat-box {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: none;
+    z-index: 1000;
+}
+
+.chat-header {
+    background-color: #ebdddd;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-body {
+    padding: 10px;
+}
+
+.chat-body p {
+    margin-bottom: 10px;
+}
+
+.chat-body input {
+    width: calc(100% - 60px);
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.chat-body button {
+    padding: 5px 10px;
+}
+
+.chat-footer {
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-footer button {
+    padding: 5px 10px;
+}
+
+.chat-box {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+}
+
+.chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-input {
+    display: flex;
+}
+
+.chat-input input {
+    flex-grow: 1;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+
+.message {
+    margin: 5px 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.user-message {
+    background-color: #007bff;
+    color: #fff;
+    align-self: flex-end;
+}
+
+.admin-message {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+/* Reservation Form Styling */
+.form-label {
+    font-weight: bold;
+    color: #91087a;
+}
+
+.btn-primary {
+    background-color: #91087a;
+    border-color: #91087a;
+}
+
+.btn-primary:hover {
+    background-color: #cf2828;
+    border-color: #a12a8a;
+}
+
+
+
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: red;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+}
+
+.categories {
+    text-align: center;
+    padding: 20px;
+}
+
+.categories h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.category {
+    width: 150px;
+    margin: 10px;
+    text-align: center;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.category p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: red;
+    text-decoration: none;
+}
+
+.view-more:hover {
+    text-decoration: underline;
+}
+
+
+/* feedback xss */
+
+.feedback-form {
+    display: none; /* Initially hidden */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback-form .feedback-header {
+    background: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback-form .feedback-body {
+    background: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.feedback-form textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.feedback-form button {
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background: #0056b3;
+}
+
+.btn-close {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #ff5fdf;
+            background: url('') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .signin-container {
+            color: #000000;
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #91087a;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .signin-container:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .signin-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .form-control {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .form-control:focus {
+            box-shadow: 0 0 5px rgba(145, 8, 122, 0.5);
+            border-color: #91087a;
+        }
+
+        .btn-primary {
+            background-color: #91087a;
+            border-color: #91087a;
+            transition: all 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease-in-out;
+            transform: rotate(45deg);
+        }
+
+        .btn-primary:hover::before {
+            left: -50%;
+        }
+
+        .btn-primary:hover {
+            background-color: #7a0065;
+            border-color: #5a0047;
+        }
+
+        .btn-primary:focus {
+            box-shadow: 0 0 5px rgba(145, 8, 122, 0.5);
+        }
+
+        .btn-primary:active {
+            background-color: #5a0047;
+            border-color: #3a002b;
+        }
+
+        .form-text {
+            transition: color 0.3s ease-in-out;
+        }
+
+        .form-text:hover {
+            color: #91087a;
+        }
+
+        a {
+            color: #91087a;
+            text-decoration: none;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #7a0065;
+        }
+
+        

@@ -1,0 +1,112 @@
+/* General Body Styling */
+body {
+    font-family: "Poppins", sans-serif;
+    color: #91087a;
+    background: url('doodle-coffee-time-line-arrows-heart-stars-tea-cupcake-text-cafe-sketch-set-cute-isolated-collection-for-restaurant-vector.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: rgba(30, 33, 45, 0.9);
+    position: fixed;
+    /* Make the navbar fixed */
+    top: 0;
+    /* Align it to the top */
+    width: 100%;
+    /* Full width */
+    z-index: 1000;
+    /* Ensure it stays on top */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: "SnellBT Regular", sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.nav-link.active {
+    color: #ffffff !important;
+    background-color: #343a40;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+    background-color: #495057;
+}
+
+/* Container Styling */
+.container {
+    margin-top: 90px;
+    /* Add margin-top to offset the fixed navbar height */
+    max-width: 1200px;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Card Styling */
+.card {
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    color: #1e212d;
+}
+
+.card-text {
+    color: #495057;
+}
+
+/* Logo Styling */
+.logo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+/* Section Headings */
+h2 {
+    color: #1e212d;
+    /* Dark heading color */
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    /* Make the footer fixed */
+    bottom: 0;
+    /* Align it to the bottom */
+    width: 100%;
+    /* Full width */
+    height: 2cm;
+}
